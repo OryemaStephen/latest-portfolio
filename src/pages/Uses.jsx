@@ -50,7 +50,7 @@ const sections = [
 
 const Uses = () => (
   <Page
-    eyebrow="Uses"
+    eyebrow="Tools"
     title="My tools of trade"
     description="Inspired by uses.tech, here's the software and services I rely on to design, build and ship."
     updated="2026-09-17"

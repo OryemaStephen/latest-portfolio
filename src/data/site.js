@@ -39,6 +39,6 @@ export const navigation = [
   { title: "Home", to: "/", hidden: true },
   { title: "Services", to: "/services" },
   { title: "Projects", to: "/projects" },
-  { title: "Uses", to: "/uses" },
+  { title: "Tools", to: "/uses" },
   { title: "Now", to: "/now" },
 ];
