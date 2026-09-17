@@ -69,8 +69,8 @@ const steps = [
 const Services = () => (
   <Page
     eyebrow="Services"
-    title="Frontend engineering for complex products"
-    description="If you're building a FinTech, GovTech or SaaS product with real workflows behind it, I can help turn requirements into a reliable, scalable interface."
+    title="Software engineering for complex products"
+    description="If you're building a FinTech, GovTech or SaaS product with real workflows behind it, I can help turn requirements into a reliable, scalable application."
     updated="2026-09-17"
   >
     <h2>What I build</h2>

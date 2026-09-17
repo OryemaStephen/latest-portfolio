@@ -12,7 +12,7 @@ npm run build    # outputs to dist/
 
 ## Editing content
 
-- `src/data/site.js`: name, tagline, bio, contact details, the "Open to new projects" badge (`available`), social links and navigation order (which also sets the Previous/Next buttons)
+- `src/data/site.js`: name, tagline, bio, contact details, social links and navigation order (which also sets the Previous/Next buttons)
 - `src/data/projects.js`: projects; each one gets a page at `/projects/<slug>`
 - `src/pages/Now.jsx`, `Uses.jsx`, `Services.jsx`, `Home.jsx`: page copy; bump `updated` when you change them
 - `src/index.css`: colours, fonts and the dark theme (all colours are tokens in `@theme` and `.dark`)

@@ -8,18 +8,6 @@ import SocialIcon from "./SocialIcon";
 const itemClass =
   "group flex items-center gap-2.5 rounded-lg px-2 py-1.5 text-sm text-ink transition hover:bg-subtle hover:text-accent lg:-mx-2";
 
-const AvailableBadge = ({ className = "" }) => (
-  <p
-    className={`items-center gap-2 rounded-full bg-accent-soft px-2.5 py-1 text-xs font-medium text-accent ${className}`}
-  >
-    <span className="relative flex h-2 w-2">
-      <span className="absolute inline-flex h-full w-full rounded-full bg-emerald-500 opacity-60 motion-safe:animate-ping" />
-      <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-500" />
-    </span>
-    Open to new projects
-  </p>
-);
-
 const AuthorProfile = () => {
   const [open, setOpen] = useState(false);
 
@@ -49,9 +37,6 @@ const AuthorProfile = () => {
         <p className="mt-2 hidden text-sm leading-relaxed text-muted lg:block">
           {author.bio}
         </p>
-        {author.available && (
-          <AvailableBadge className="mt-4 hidden lg:inline-flex" />
-        )}
       </div>
 
       <div className="relative lg:mt-5">

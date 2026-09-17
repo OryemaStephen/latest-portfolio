@@ -38,7 +38,7 @@ const Now = () => (
         <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
       </span>
       <p className="text-[0.95rem] text-heading">
-        Frontend Software Engineer at <strong>Yoya Technologies</strong>, taking
+        Software Engineer at <strong>Yoya Technologies</strong>, taking
         on freelance projects on the side.
       </p>
     </div>

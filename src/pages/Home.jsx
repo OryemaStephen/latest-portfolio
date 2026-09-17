@@ -39,6 +39,16 @@ const skills = [
   { group: "Backend", items: ["Node.js", "Express.js", "REST APIs"] },
   { group: "Databases", items: ["PostgreSQL", "MySQL"] },
   { group: "Tools", items: ["Git", "GitHub", "Docker", "Figma", "Postman"] },
+  {
+    group: "Specialties",
+    items: [
+      "API Integration",
+      "RBAC",
+      "Responsive UI",
+      "Performance Optimization",
+      "Workflow & Approval Systems",
+    ],
+  },
 ];
 
 const experience = [
@@ -47,21 +57,17 @@ const experience = [
     company: "Yoya Technologies Limited",
     location: "Uganda",
     period: "Sept 2025 – Present",
+    tech: ["React", "TypeScript", "JavaScript", "Redux Toolkit", "REST APIs", "Django"],
     points: [
-      "Develop production web applications for financial services, government revenue administration and municipal operations, serving 100,000+ users and facilitating over UGX 100M in daily revenue collections.",
-      "Build workflow-driven modules for payments, accounting, inventory, reporting, verification, transfers and multi-level approvals, including Chart of Accounts, General Ledger, Trial Balance, Balance Sheet and Profit & Loss.",
-      "Implement role-based access control and permission-aware workflows, and integrate React apps with Django REST APIs.",
-      "Optimize performance with lazy loading and code splitting, keeping page load times under 2 seconds.",
-    ],
-  },
-  {
-    role: "Software Developer",
-    company: "Jeba Pesa Uganda Limited",
-    location: "Hybrid",
-    period: "Jan 2025 – Apr 2025",
-    points: [
-      "Developed responsive features for a digital financial platform supporting crowdfunding, SACCOs, savings groups, financial tracking and credit building.",
-      "Built financial dashboards and reusable React components with Redux Toolkit state management.",
+      "Develop and maintain production web applications supporting financial services, government revenue administration and municipal operations, serving 100,000+ users and facilitating over UGX 100M in daily revenue collections.",
+      "Build complex workflow-driven modules for user and business management, financial transactions, inventory, payments, accounting, reporting, verification, amendments, transfers and multi-level approvals.",
+      "Develop accounting and financial reporting interfaces, including Chart of Accounts, General Ledger, Trial Balance, Balance Sheet and Profit & Loss.",
+      "Implement role-based access control and permission-aware workflows, so users can access functions and approval stages according to their assigned responsibilities.",
+      "Integrate React applications with Django REST APIs to deliver real-time, data-intensive workflows, handling validation, authentication and complex business process interactions.",
+      "Build reusable React/TypeScript components and scalable frontend patterns that improve consistency and maintainability across applications.",
+      "Use Redux Toolkit to manage complex application state across multi-module enterprise workflows.",
+      "Optimize performance with lazy loading, code splitting and other frontend techniques, keeping page load times under 2 seconds.",
+      "Translate business requirements and Figma designs into responsive, accessible, production-ready interfaces.",
     ],
   },
   {
@@ -69,9 +75,28 @@ const experience = [
     company: "AI Smartual Learning",
     location: "Malaysia · Remote",
     period: "Sept 2024 – Sept 2025",
+    tech: ["React", "JavaScript", "Redux Toolkit", "Node.js", "Express.js", "PostgreSQL"],
     points: [
-      "Built course management, content publishing, creator dashboards and learning workflows for a digital learning and content monetization platform.",
-      "Integrated Node.js/Express.js APIs and automated email notifications, working with distributed teams across time zones.",
+      "Developed and maintained frontend features for a digital learning and content monetization platform serving learners and content creators.",
+      "Built interfaces for course management, content publishing, creator dashboards and learning workflows using React and Redux Toolkit.",
+      "Integrated REST APIs with Node.js/Express.js backend services to support user, content and learning operations.",
+      "Implemented communication workflows, including automated email notifications and user-facing status updates.",
+      "Collaborated with distributed product and engineering teams across multiple time zones to deliver and support production features.",
+      "Contributed to testing, bug resolution, production releases and continuous platform improvements.",
+    ],
+  },
+  {
+    role: "Software Developer",
+    company: "Jeba Pesa Uganda Limited",
+    location: "Hybrid",
+    period: "Jan 2025 – Apr 2025",
+    tech: ["React", "JavaScript", "Redux Toolkit", "REST APIs"],
+    points: [
+      "Developed responsive frontend features for a digital financial platform supporting crowdfunding, SACCOs, savings groups, financial tracking and credit-building services.",
+      "Built financial dashboards and data-driven interfaces for managing financial activities and user information.",
+      "Integrated REST APIs to retrieve and manage financial data and support end-to-end user workflows.",
+      "Implemented reusable React components and Redux Toolkit state management to improve application maintainability.",
+      "Optimized interfaces for mobile responsiveness, accessibility and usability across different devices.",
     ],
   },
 ];
@@ -118,6 +143,9 @@ const Home = () => (
                     @ {job.company}
                   </span>
                 </h3>
+                <p className="mt-1 text-xs text-muted">
+                  {job.tech.join(" · ")}
+                </p>
                 <ul className="mt-2 space-y-1.5 text-[0.95rem] leading-relaxed">
                   {job.points.map((point) => (
                     <li key={point} className="flex gap-2.5">
@@ -220,9 +248,10 @@ const Home = () => (
     }
   >
     <p className="lead">
-      I&apos;m a frontend engineer, building and maintaining production web
-      applications with React, TypeScript and Next.js across FinTech, GovTech,
-      SaaS and digital learning.
+      I&apos;m a software engineer with 2+ years of experience building,
+      deploying and maintaining production web applications with React,
+      TypeScript, Next.js, Node.js and PostgreSQL across FinTech, GovTech, SaaS
+      and digital learning.
     </p>
 
     <div className="not-prose my-8 flex flex-wrap gap-3">
@@ -256,11 +285,12 @@ const Home = () => (
       accounting, user and business management, inventory, approvals, reporting,
       verification and role-based access control. I turn business requirements
       and Figma designs into scalable, responsive interfaces, integrate REST
-      APIs, manage complex application state and optimize performance.
+      APIs, manage complex application state, implement secure permission-based
+      workflows and optimize performance.
     </p>
     <p>
-      I&apos;m also comfortable with Node.js, Express.js, PostgreSQL and MySQL,
-      so I can contribute across the full software development lifecycle. Have a
+      On the backend I work with Node.js, Express.js, PostgreSQL and MySQL, so I
+      can contribute across the full software development lifecycle. Have a
       look at the <Link to="/services">services</Link> I offer, the{" "}
       <Link to="/uses">tools I use</Link>, and what I&apos;m focused on{" "}
       <Link to="/now">right now</Link>.
