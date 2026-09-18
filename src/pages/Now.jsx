@@ -2,7 +2,7 @@ import {
   FaBriefcase,
   FaGraduationCap,
   FaHeart,
-  FaLaptopCode,
+  // FaLaptopCode,
 } from "react-icons/fa6";
 import Page from "../components/Page";
 
@@ -28,22 +28,22 @@ const sections = [
       },
     ],
   },
-  {
-    heading: "Building on the side",
-    icon: FaLaptopCode,
-    items: [
-      {
-        title: "School management system",
-        description:
-          "A multi-tenant platform where one deployment serves many schools, each with its own users, roles, students and records. Access is decided by permissions, never by role names.",
-      },
-      {
-        title: "A personal idea in tech",
-        description:
-          "Something of my own that I'm shaping in my spare hours. More on it when it's ready to share.",
-      },
-    ],
-  },
+  // {
+  //   heading: "Building on the side",
+  //   icon: FaLaptopCode,
+  //   items: [
+  //     {
+  //       title: "School management system",
+  //       description:
+  //         "A multi-tenant platform where one deployment serves many schools, each with its own users, roles, students and records. Access is decided by permissions, never by role names.",
+  //     },
+  //     {
+  //       title: "A personal idea in tech",
+  //       description:
+  //         "Something of my own that I'm shaping in my spare hours. More on it when it's ready to share.",
+  //     },
+  //   ],
+  // },
   {
     heading: "Learning",
     icon: FaGraduationCap,

@@ -1,7 +1,4 @@
-import publisher from "../assets/projects/publisher.png";
 import jebapesa from "../assets/projects/jebapesa.png";
-import ndiisaclan from "../assets/projects/ndiisaclan.png";
-import portfolio from "../assets/projects/portfolio.png";
 import barbershop from "../assets/projects/barbershop.png";
 import myshop from "../assets/projects/myshop.png";
 import rentcars from "../assets/projects/rentcars.png";
@@ -107,31 +104,6 @@ const projects = [
     tags: ["React", "TypeScript", "MUI", "Ant Design", "Mapbox GL"],
   },
   {
-    title: "VPublisher",
-    company: "AI Smartual Learning",
-    role: "Software Developer",
-    image: publisher,
-    live: "https://vpublisher.vlearned.com",
-    github: "https://github.com/OryemaStephen",
-    description:
-      "A digital learning and content monetization platform serving learners and content creators.",
-    highlights: [
-      "Developed and maintained frontend features for course management, content publishing, creator dashboards and learning workflows using React and Redux Toolkit",
-      "Integrated REST APIs with Node.js/Express.js backend services to support user, content and learning operations",
-      "Implemented communication workflows, including automated email notifications and user-facing status updates",
-      "Integrated Stripe and Flutterwave for subscriptions and content payments",
-      "Used the OpenAI API to automate content approval and recommend content to readers",
-      "Created a rich text editor with image uploads",
-      "Built an analytics dashboard to track content performance",
-      "Contributed to testing, bug resolution, production releases and continuous platform improvements",
-    ],
-    tags: ["React", "Redux Toolkit", "Node.js", "Express.js", "PostgreSQL", "Tailwind CSS", "Stripe", "Flutterwave", "OpenAI"],
-    challenge:
-      "Handling real-time content updates from multiple contributors while keeping data consistent.",
-    solution:
-      "Used WebSocket connections for live updates and tuned PostgreSQL queries with proper indexing.",
-  },
-  {
     title: "Jeba Pesa",
     company: "Jeba Pesa Uganda Limited",
     role: "Software Developer",
@@ -149,23 +121,6 @@ const projects = [
     tags: ["React", "Redux Toolkit", "Tailwind CSS"],
     challenge: "Keeping financial data accurate and secure for sensitive transactions.",
     solution: "Server-side validation, audit logging and regular database backups.",
-  },
-  {
-    title: "Ndiisaclan Portal",
-    image: ndiisaclan,
-    live: "https://ndiisaclan.org/",
-    description:
-      "A clan management system with a public portal and an admin dashboard.",
-    highlights: [
-      "Built member registration and profile management for administrators",
-      "Created a content management system for clan news and announcements",
-      "Added an e-commerce section for clan merchandise",
-      "Implemented genealogy tracking for clan members",
-    ],
-    tags: ["React", "Tailwind CSS", "PHP", "MySQL"],
-    challenge: "Modelling complex family tree relationships in the database.",
-    solution:
-      "A hierarchical data model with recursive queries and a visualization library.",
   },
   {
     title: "E-Commerce Store",
@@ -214,21 +169,6 @@ const projects = [
     tags: ["React", "Tailwind CSS"],
     challenge: "Keeping high-quality imagery without slowing the site down.",
     solution: "Compressed, lazy-loaded images and clear, accessible typography.",
-  },
-  {
-    title: "Personal Website",
-    image: portfolio,
-    live: "https://oryemasteph.netlify.app/",
-    github: "https://github.com/OryemaStephen/Oryemasteph",
-    description: "The previous version of this site: a showcase of my work and skills.",
-    highlights: [
-      "Designed a modern UI with a dark/light mode toggle",
-      "Created a project showcase with detailed case studies",
-      "Built a contact form with email integration",
-    ],
-    tags: ["React", "Tailwind CSS"],
-    challenge: "Balancing visual appeal with fast load times.",
-    solution: "Optimized images and lazy loading.",
   },
 ].map((project) => ({ ...project, slug: slugify(project.title) }));
 
